@@ -1,0 +1,14 @@
+{% extends 'myapp/template.html' %}
+
+{% block content %}
+        {% for vacancy in vacansies %}
+        <tr>
+            <h1>{{ vacancy.profession }}</h1>
+            <details>
+                <summary>Подробнее</summary>
+                <p>Описание: {{ vacancy.description }}</p> 
+                <p>Требования: {{ vacancy.requirements }}</p> 
+            </details>
+        </tr>
+        {% endfor %}
+{% endblock %}

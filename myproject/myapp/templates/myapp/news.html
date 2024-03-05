@@ -1,0 +1,14 @@
+{% extends 'myapp/template.html' %}
+
+{% block content %}
+        {% for new in news %}
+        <tr>
+            <h2>{{ new.title }}. {{ new.date_created_new }}</h2>
+            <details>
+                <summary>Подробнее</summary>
+                <p><a href="/"><img src="images/{{ new.foto_of_new }}" alt="{{ new.foto_of_new }}" height="250" width="250" /></a></p>
+                <p>{{ new.description }}</p> 
+            </details>
+        </tr>
+        {% endfor %}
+{% endblock %}

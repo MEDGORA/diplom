@@ -1,0 +1,10 @@
+{% extends 'myapp/template.html' %}
+
+{% block content %}
+        {% for personal in personals %}
+        <tr>
+            <p><a href="/"><img src="images/{{ personal.foto_of_personal }}" alt="{{ personal.foto_of_personal }}" height="250" width="250" /></a></p>
+            <h1>{{ personal.post }}: {{ personal.second_name }} {{ personal.name }} {{ personal.last_name }}</h1>
+        </tr>
+        {% endfor %}
+{% endblock %}

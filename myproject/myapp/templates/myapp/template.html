@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="charset=utf-8" />
+    <meta charset="utf-8" />
+    <title>Управляющая компания.</title>
+    <!--<link href="css/style.css" rel="stylesheet" />-->
+
+</head>
+
+<header>
+    <div class="header-area">
+
+        <!-- Top Contact Info -->
+        <div class="row logo-top-info">
+            <div class="container">
+                <div class="col-md-5 logo">
+                    <!-- Main Logo -->
+                    <!--<a href="/"><img src="images/logo.png" alt="Company Logo" height="150" width="200" /></a>-->
+                    <a href="/"><img src="https://lyubimiigorod.ru/images/cards/6027d811661d0.jpg" alt="Company Logo" height="250" width="250" /></a>
+                </div>
+                <div class="col-md-6 cat">
+                    <!-- Main Logo -->
+                    <!--<a href="/"><img src="images/Cat.png" alt="Cat" height="250" width="1000" /></a>-->
+                    <a href="/"><img src="https://pipcat.ru/wp-content/uploads/2022/11/024_by.jpg" alt="Cat" height="250" width="1000" /></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-menu">
+            <div class="container">
+                <div class="home">
+                    <a href="{% url 'home' %}">ГЛАВНАЯ</a></p>
+                </div>
+
+                <div class="about">
+                    <a href="{% url 'about' %}">О КОМПАНИИ</a></p>
+                </div>
+
+                <div class="vacansies">
+                    <a href="{% url 'vacansies' %}">ВАКАНСИИ</a></p>
+                </div>
+
+                <div class="personal">
+                    <a href="{% url 'personal' %}">НАШИ СПЕЦИАЛИСТЫ</a></p>
+                </div>
+
+                <div class="news">
+                    <a href="{% url 'news' %}">НОВОСТИ</a></p>
+                </div>
+
+                <div class="for_consumers">
+                    <a href="{% url 'for_consumers' %}">ПОТРЕБИТЕЛЯМ</a></p>
+                </div>
+
+                <div class="contacts">
+                    <a href="{% url 'contacts' %}">КОНТАКТЫ</a></p>
+                </div>
+
+                <div class="requisites">
+                    <a href="{% url 'requisites' %}">РЕКВИЗИТЫ</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<body>
+    <div class="body">
+        <div class="content">
+            {% block content %}
+                <p>Скоро тут появится текст...</p>
+            {% endblock %}
+        </div>
+    </div>
+</body>
+
+<footer>
+    <div class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-1">
+                            <div class="contact-box">
+                                <div class="contact-details">
+                                    <h4 class="pre-footer-title">Центральный офис</h4>
+                                    <p>
+                                        188888, РК, г. Иваново,
+                                        <br>ул. Ленина, д. 10
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-2">
+                            <div class="contact-box" >
+                                <div class="contact-details">
+                                    <h4 class="pre-footer-title">ЗВОНИТЕ</h4>
+                                    <p>
+                                        +8 (800) 555-35-35
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="contact-box">
+                                <div class="contact-details">
+                                    <h4 class="pre-footer-title">ПИШИТЕ</h4>
+                                    <p>
+                                        yprav@mail.ru
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+        <div class="copyright">
+            <div class="container">
+                <div class="row copyright-bar">
+                    <div class="col-md-4">
+                        <b><text style="color:darkgray">&copy; MEDGORA.2024</text></b>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<style>
+    footer {
+        height: 200px;
+        background-color: #b2c4ff;
+    }
+
+    .contact-box {
+        width: 200px;
+        height: 100px;
+        margin: 0 auto;
+        background-color: #f8fa9e;
+        padding: 0 20px 20px 20px;
+        border: 5px solid rgb(77, 137, 247);
+    }
+
+    .col-md-1 {
+        position: relative;
+        right: 400px;
+    }
+
+    .col-md-2 {
+        position: relative;
+        top: -130px;
+        left: 400px;
+    }
+
+    .col-md-3 {
+        position: relative;
+        top: -260px;
+    }
+
+    .col-md-4 {
+        position: relative;
+        top: -230px;
+        left: 40px;
+    }
+
+    .col-md-6 {
+        position: relative;
+        top: -250px;
+        left: 300px;
+    }
+
+    .main-menu {
+        position: relative;
+        background-color:#b2c4ff;
+        height: 50px;
+        top: -250px;
+    }
+
+    .home {
+        position: relative;
+        top: 20px;
+        left: 40px;
+    }
+
+    .about {
+        position: relative;
+        top: -14px;
+        left: 160px;
+    }
+
+    .vacansies {
+        position: relative;
+        top: -48px;
+        left: 320px;
+    }
+
+    .personal {
+        position: relative;
+        top: -82px;
+        left: 460px;
+    }
+
+    .news {
+        position: relative;
+        top: -116px;
+        left: 700px;
+    }
+
+    .for_consumers {
+        position: relative;
+        top: -150px;
+        left: 840px;
+    }
+
+    .contacts {
+        position: relative;
+        top: -184px;
+        left: 1040px;
+    }
+
+    .requisites {
+        position: relative;
+        top: -218px;
+        left: 1200px;
+    }
+
+    .content {
+        top: -400px;
+    }
+   </style>
+</html>

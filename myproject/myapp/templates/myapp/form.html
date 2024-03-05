@@ -1,0 +1,11 @@
+{% extends 'myapp/template.html' %}
+
+{% block content %}
+    <h1>Введите информацию об обращении:</h1>
+        <form action="" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <input type="submit" value="Отправить">
+        </form>
+    <h2>{{ message }}</h2>
+{% endblock %}

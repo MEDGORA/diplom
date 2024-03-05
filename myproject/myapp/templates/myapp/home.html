@@ -1,0 +1,13 @@
+{% extends 'myapp/template.html' %}
+
+{% block <title>Главная страница</title> %'}
+
+{% block content %}
+    <!-- <a href="/"><img src="images/UComp.png" alt="UComp" /></a> -->
+    <a href="/"><img src="https://m2keep.ru/wp-content/uploads/Upravlenie_MKD/UK_vidi_funkcii/UComp_r.jpg" alt="UComp" /></a>
+    <p>- Заботимся о доме: от уборки до капремонта;</p>
+    <p>- Прозрачные цены: без комиссий и переплат;</p>
+    <p>- Следим за качеством: мониторинг работы партнеров;</p>
+    <p>- Работаем оперативно: круглосуточная обработка заявок.</p>
+    <p> Более 100 услуг по привлекательным ценам с гарантией выполнения работы. Закажите услуги всего в 2 <a href="{% url 'form' %}">клик</a>. </p>
+{% endblock %}
